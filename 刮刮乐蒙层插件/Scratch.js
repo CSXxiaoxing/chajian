@@ -204,7 +204,7 @@
       ctx.fillStyle = _obj.fontColor;
       ctx.fillText(_obj.fontText, _obj.TX, _obj.TY);
 
-      // 画园的方法
+      // 画圆的方法
       // @param { integer } 圆心的x坐标
       // @param { integer } 圆心的y坐标
       // @param { integer } 圆心半径
@@ -283,7 +283,7 @@
         SC_INT = running.call(arguments, Default)
         SC_INT.next()
       } catch (E) {
-        console.error(999, E)
+        console.error('环境不支持：', E)
       }
     }
     // 非模块引入/为直接引用

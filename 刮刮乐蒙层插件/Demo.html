@@ -36,6 +36,11 @@
       (function () {
         $Sc('#GGL', function () {
           console.log('刮了')
+          let para = document.createElement("p");
+          let node = document.createTextNode("恭喜你获得1份好运");
+          para.appendChild(node);
+          let element = document.querySelector("#GGL");
+          element.appendChild(para);
         })
       })()
     </script>
